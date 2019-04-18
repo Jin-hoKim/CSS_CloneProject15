@@ -1,5 +1,9 @@
 :root {
     --grayColor: rgba(0, 0, 0, 0.5);
+    --lightGreyColor: rgba(239, 239, 239);
+    --lightPinkColor: rgba(244, 178, 182);
+    --whiteColor: rgba(255, 255, 255);
+    --blackColor: rgba(0, 0, 0, 1);
     --borderRadius: 25px;
 }
 
@@ -19,4 +23,227 @@ h6 {
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 30px 55px 30px 55px;
+}
+
+div,
+ul,
+p {
+    /* border: 1px solid var(--grayColor); */
+    border: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.dividor {
+    color: var(--grayColor);
+}
+
+.small__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.account__links {
+    font-size: 11px;
+    color: var(--grayColor);
+    cursor: pointer;
+}
+
+.account__links:last-child .links_item:first-child {
+    margin-right: 30px;
+}
+
+.account__links .links__item {
+    cursor: pointer;
+}
+
+.header__title {
+    height: 28vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+.header__title .title__letter {
+    margin: 0px 12px;
+}
+
+.header__title .title__letter:nth-child(even) {
+    padding-top: 30px;
+}
+
+.header__nav,
+.header__subnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__nav .nav__item,
+.header__subnav .subnav__item {
+    margin: 0px 40px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.header__subnav {
+    padding: 30px 50px 50px 100px;
+}
+
+.header__subnav .subnav__item {
+    margin: 0px 10px;
+    font-size: 10px;
+    color: var(--grayColor);
+}
+
+.header__subnav .subnav__item.selected {
+    color: var(--blackColor);
+}
+
+.product__infobox {
+    height: 30vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.product__infobox .product__image {
+    background-image: url("https://i-h1.pinimg.com/564x/0d/70/19/0d7019d029ffce7fa894c7180a5d2fa5.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.product__infos {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5px;
+}
+
+.infos__info .infos__category {
+    font-style: italic;
+    font-size: 9px;
+    color: var(--grayColor);
+}
+
+.infos__info .infos__product {
+    font-style: italic;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info__descript {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.infos__buttons button {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 10px;
+    margin-right: 3px;
+    background-color: var(--lightGreyColor);
+    border: none;
+    cursor: pointer;
+    color: var(--grayColor);
+}
+
+.infos__materials {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.product__featured {
+    padding-top: 50px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured__image {
+    width: 100%;
+    height: 40vh;
+    background-image: url("https://i-h1.pinimg.com/564x/de/3e/61/de3e61f2659901eed39168fe1dcf97ae.jpg");
+    background-size: cover;
+    background-position: center center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.featured__desc {
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.subscribe {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe .subscribe__title {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.subscribe .subscribe__desc {
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.subscribe .subscribe__form .form__input {
+    border: 1px solid var(--lightGreyColor);
+    padding: 10px 15px;
+    font-size: 11px;
+}
+
+.subscribe .subscribe__form .form__submit {
+    border: none;
+    background-color: var(--lightPinkColor);
+    color: var(--whiteColor);
+    font-size: 11px;
+    padding: 10px 15px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--grayColor);
+}
+
+.socials .socials__item {
+    margin: 0px 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.copyright__info {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    color: var(--grayColor);
+    font-weight: 600;
 }
